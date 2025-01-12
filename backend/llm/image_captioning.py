@@ -95,7 +95,7 @@ async def generate_caption(prompt: str, image: UploadFile = File(...)):
         logger.info(f"Received request with prompt: {prompt}")
 
         image_content = await image.read()
-        pil_image = PIL.Image.open(io.BytesIO())
+        pil_image = PIL.Image.open(io.BytesIO(image_content))
 
         logger.info("Image successfully loaded")
 
