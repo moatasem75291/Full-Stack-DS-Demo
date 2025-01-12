@@ -103,7 +103,7 @@ docker stop $(docker ps -q)
 
 - **Port:** `7088`
 
-- **API Endpoint:** `http://localhost:7088//generate`
+- **API Endpoint:** `http://localhost:7088/generate`
 
 - **Input:** An image file and a text prompt.
 
