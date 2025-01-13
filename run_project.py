@@ -6,15 +6,15 @@ import os
 def run_docker_containers():
     containers = [
         {
-            "path": r"F:\Fixed Solutions\January\first_week\projects\test\demo\backend\iris",  # Put your own Path to the project
+            "path": r"F:\Fixed Solutions\January\first_week\projects\demo\backend\iris",  # Put your own Path to the project
             "command": "docker run -p 7099:7099 iris-app-v2",
         },
         {
-            "path": r"F:\Fixed Solutions\January\first_week\projects\test\demo\backend\llm",  # Put your own Path to the project
+            "path": r"F:\Fixed Solutions\January\first_week\projects\demo\backend\llm",  # Put your own Path to the project
             "command": "docker run -p 7088:7088 image-cap-app",
         },
         {
-            "path": r"F:\Fixed Solutions\January\first_week\projects\test\demo\frontend",  # Put your own Path to the project
+            "path": r"F:\Fixed Solutions\January\first_week\projects\demo\frontend",  # Put your own Path to the project
             "command": "docker run -p 7077:7077 demo-react-app",
         },
     ]
